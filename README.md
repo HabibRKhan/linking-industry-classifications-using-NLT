@@ -24,6 +24,9 @@ Importantly, negation was identified. For example, for ISIC3 activitiy "Blacktop
 ### Editorial distance
 Levenshtein distance between two strings is the minimum number of single-character edits (insertions, deletions or substitutions) required to change one into the other. This distance between the ISIC3 activities description and the ISIC4 full descriptions were calculated as the Levenshtein distance of the set of words in them. A **Proximity** index was defined by diving the number of characters in the activities descriptions by the sum of the Levenshtein distances between the two sets of words. A higher value of the index would indicate a closer match because the denominator would be small compared to the numerator in that case.
 
+The final output looked like this:
+![final table](images/output.PNG)
+
 ## Future improvements
 Below points should be considered for future improvements:
 - Review of words to be excluded. For example, could we also exlcude "growing" as it appears in many aggricultural activities but seems to have no comparison values?
